@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logoalura.png" alt="Logo da alura com a inicial da letra a">
+    </header>
+   <main class="main"> 
+      <section>
+         <textarea id="primeira_mensagem" class="input-texto" cols="40" rows="6" placeholder="digite seu texto:"></textarea>
+         <div>
+            
+            <h6 class="informacao">Apenas letras maiúsculas e minúsculas.</h6>
+            
+         </div> 
+         <div class="botoes">
+            <button class="encriptar" onclick="btnEncriptar()">
+                Criptografar
+          </button>
+          <button class="desencriptar" onclick="btnDesencriptar()">
+                Descriptografar
+          </button>
+         </div>
+      </section>
+      
+      
+      
+      <section>             
+            
+            <div>
+                <textarea id="segunda_mensagem" class="mensagem" cols="18" rows="8" placeholder=""></textarea>
+                
+                    <h5 class="msn"></h5>
+                    <p class="digite">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        
+      </section>
+   </main>
+   <footer>
+      <p><span>Leandro Menezes</span></p>
+      <div>
+          <a href="https://github.com/LeandroOmenezes" target="_blank"><img src="./imagens/github.svg" alt=""></a>
+          <a href="https://www.linkedin.com/in/leandro-oliveira-menezes-47336b1a2/" target="_blank"><img src="./imagens/linkedin.svg" alt=""></a>
+      </div>
+  </footer>
+ <script src="script.js"></script>
+</body>
+
+</html>
