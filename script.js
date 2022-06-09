@@ -29,11 +29,11 @@ function btnDesencriptar() {
 
 
 function desencriptar(stringDesencriptada) {
-    let matrizCodigo = [["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]];g
+    let matrizCodigo = [["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]];
     stringDesencriptada = stringDesencriptada.toLowerCase();
     
     for(let i=1; i < matrizCodigo.length; i++) {
-        if(stringDesencriptada.includes(matrizCodigo[i][1])) {
+        if(stringDesencriptada.includes(matrizCodigo[i][0])) {
             stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
         }
     }
